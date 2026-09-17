@@ -5,7 +5,7 @@
 > relocalisation and loop/map-fusion proposals, and evaluation instrumentation.
 > HuMemSLAM proposes historical places; ORB-SLAM3 retains responsibility for
 > pose estimation, geometric verification and map optimisation. See
-> [`HUMANSLAM_INTEGRATION.md`](HUMANSLAM_INTEGRATION.md) for the integration
+> [`HUMEMSLAM_INTEGRATION.md`](HUMEMSLAM_INTEGRATION.md) for the integration
 > architecture and build notes. The remainder of this README is the upstream
 > ORB-SLAM3 documentation.
 

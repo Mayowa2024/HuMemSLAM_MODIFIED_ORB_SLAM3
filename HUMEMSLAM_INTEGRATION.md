@@ -1,15 +1,15 @@
-# ORB-SLAM3 HumanSLAM integration
+# ORB-SLAM3 HuMemSLAM integration
 
 This repository is based on
 [UZ-SLAMLab/ORB_SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) and preserves
 the upstream history, licence and attribution.
 
-The HumanSLAM modifications add:
+The HuMemSLAM modifications add:
 
 - a semantic tracking snapshot containing the current frame, reference
   keyframe, Atlas map, tracking state and inlier count;
 - a thread-safe semantic candidate interface in `System` and `Tracking`;
-- resolution of HumanSLAM map/keyframe identifiers against the live Atlas;
+- resolution of HuMemSLAM map/keyframe identifiers against the live Atlas;
 - ORB matching, PnP and pose-optimised semantic relocalisation candidates;
 - conventional ORB bag-of-words fallback when semantic candidates fail;
 - a separate semantic cross-map proposal queue in `LoopClosing`;
@@ -19,12 +19,12 @@ The HumanSLAM modifications add:
   ORB-SLAM3 Atlas fusion; and
 - diagnostic event, keyframe and feature logging used during evaluation.
 
-HumanSLAM proposes candidate places. ORB-SLAM3 remains responsible for pose
+HuMemSLAM proposes candidate places. ORB-SLAM3 remains responsible for pose
 estimation, geometric verification, map transformation and optimisation.
 
 The companion semantic inference repository is:
 
-- <https://github.com/Mayowa2024/HumanSLAM>
+- <https://github.com/Mayowa2024/HuMEmSLAM>
 
 The ROS 2 wrapper and custom message packages are maintained separately from
 the ORB-SLAM3 core.
@@ -39,7 +39,7 @@ chmod +x build.sh
 ```
 
 The TensorRT semantic models are not part of this repository. They belong to
-the companion HumanSLAM project.
+the companion HuMemSLAM project.
 
 ## Upstream acknowledgement
 
