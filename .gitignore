@@ -91,3 +91,15 @@ my_settings.txt
 borrar/*
 
 */ExecMean.txt
+
+# HuMemSLAM local evaluation artefacts
+orbslam_logging_inspection.txt
+Examples_old/
+*.bak
+*.bak_*
+*.log
+*.csv
+*.mp4
+*.pdf
+CameraTrajectory_*.txt
+KeyFrameTrajectory_*.txt

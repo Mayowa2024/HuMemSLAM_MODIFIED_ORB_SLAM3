@@ -1300,7 +1300,7 @@ void System::SaveTrajectoryKITTI(const string &filename)
              Rwc(1,0) << " " << Rwc(1,1)  << " " << Rwc(1,2) << " "  << twc(1) << " " <<
              Rwc(2,0) << " " << Rwc(2,1)  << " " << Rwc(2,2) << " "  << twc(2) << endl;
         frameIndex << trajectoryRow++ << ',' << *lFrameId << ',' << *lFrameName << ','
-                   << setprecision(9) << *lT << ',' << pMap->GetId() << '\n';
+                   << setprecision(17) << *lT << ',' << pMap->GetId() << '\n';
     }
     f.close();
     frameIndex.close();

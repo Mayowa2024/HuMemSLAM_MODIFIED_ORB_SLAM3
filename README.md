@@ -1,5 +1,14 @@
 # ORB-SLAM3
 
+> **HuMemSLAM integration fork:** this repository extends ORB-SLAM3 with a
+> thread-safe semantic-candidate interface, geometrically verified semantic
+> relocalisation and loop/map-fusion proposals, and evaluation instrumentation.
+> HuMemSLAM proposes historical places; ORB-SLAM3 retains responsibility for
+> pose estimation, geometric verification and map optimisation. See
+> [`HUMANSLAM_INTEGRATION.md`](HUMANSLAM_INTEGRATION.md) for the integration
+> architecture and build notes. The remainder of this README is the upstream
+> ORB-SLAM3 documentation.
+
 ### V1.0, December 22th, 2021
 **Authors:** Carlos Campos, Richard Elvira, Juan J. Gómez Rodríguez, [José M. M. Montiel](http://webdiis.unizar.es/~josemari/), [Juan D. Tardos](http://webdiis.unizar.es/~jdtardos/).
 

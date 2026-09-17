@@ -1,5 +1,7 @@
 #include "EventLogger.h"
 
+#include <iomanip>
+
 namespace ORB_SLAM3
 {
 
@@ -20,6 +22,7 @@ void EventLogger::Open(const std::string& filename)
 
     if (mEventFile.is_open())
     {
+        mEventFile << std::setprecision(17);
         mEventFile << "frame_id,dataset_time,module,event,state,state_name,current_kf,matched_kf,matches_inliers,details\n";
     }
 }
@@ -35,6 +38,7 @@ void EventLogger::OpenKeyframes(const std::string& filename)
 
     if (mKeyframeFile.is_open())
     {
+        mKeyframeFile << std::setprecision(17);
         mKeyframeFile << "keyframe_id,frame_id,dataset_time,matches_inliers,total_keypoints,tracked_mappoints\n";
     }
 }
@@ -50,6 +54,7 @@ void EventLogger::OpenFeatures(const std::string& filename)
 
     if (mFeatureFile.is_open())
     {
+        mFeatureFile << std::setprecision(17);
         mFeatureFile << "frame_id,dataset_time,feature_idx,x,y,octave,response,has_mappoint,is_outlier,mappoint_id\n";
     }
 }
